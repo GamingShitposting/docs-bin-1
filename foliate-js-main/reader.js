@@ -76,7 +76,7 @@ class Reader {
         $('#side-bar').classList.remove('show')
     }
     constructor() {
-        $('#fullscreen-button').addEventListener('click', () => document.body.requestFullscreen());
+        $('#fullscreen-button').addEventListener('click', () => window.parent.document.body.requestFullscreen());
         $('#side-bar-button').addEventListener('click', () => {
             $('#dimming-overlay').classList.add('show')
             $('#side-bar').classList.add('show')
